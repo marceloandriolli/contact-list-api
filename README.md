@@ -4,6 +4,7 @@ API for contact list
 
 # API Structure:
 This api implements the following endpoints:
+
 | Endpoint  | HTTP Method | Result  |
 | ------------- | ------------- | ------------- |
 | /api/contact/  | GET  | List all contact
