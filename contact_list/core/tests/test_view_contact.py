@@ -52,7 +52,6 @@ class ContactViewTest(APITestCase):
             'email': 'marcelorsa@gmail.com',
             'phone': '48-984234431'
         }
-        
         url = reverse('contact-detail', kwargs={'pk': contact.pk})
         response = self.client.put(url,
                                    data=dumps(data),
@@ -64,7 +63,6 @@ class ContactViewTest(APITestCase):
         data = {
             'phone': '48-996274443'
         }
-        
         url = reverse('contact-detail', kwargs={'pk': contact.pk})
         response = self.client.put(url,
                                    data=dumps(data),
