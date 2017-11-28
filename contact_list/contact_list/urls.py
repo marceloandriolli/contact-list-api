@@ -16,6 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from core import views
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^api/contact/$', views.contact_list, name='contact-list'),
+    url(r'^api/contact/(?P<pk>[0-9]+)$', 
+        views.contact_detail, name='contact-detail')
 ]
