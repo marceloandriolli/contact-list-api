@@ -44,3 +44,5 @@ python manage.py runserver
 2. User DRF routers
 3. Use uuid on person model instead sequencia id
 4. Use generic CBV mixins from DRF om views
+5. Add Travis CI on project
+6. Add Codecov on project
