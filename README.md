@@ -38,3 +38,9 @@ cp contrib/env-sample .env
 python manage.py test
 python manage.py runserver
 ``` 
+
+# Improvements:
+1. Data model: Create a person model, remove "name" field from contact model and add foreign key to person
+2. User DRF routers
+3. Use uuid on person model instead sequencia id
+4. Use generic CBV mixins from DRF om views
